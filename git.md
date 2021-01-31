@@ -85,6 +85,9 @@ git写代码全在dev分支上实现，master上永远是线上稳定版，当de
 1.注册账号
 2.创建仓库
 3.本地代码推送(和本地相同，分支也会保留)
-4.git...
+	3.1 git add remote origin(别名) url // 给url取别名
+	3.2 git push -u origin + 分支名 // 推送代码
+4.代码下载
+	4.1 git clone + url
 ```
 
