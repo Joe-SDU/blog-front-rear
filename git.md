@@ -1,3 +1,63 @@
+### git
+
+##### git基本命令
+
+```
+git init
+```
+
+```
+git config
+```
+```
+cat 查看文件
+```
+
+```
+clear 清屏
+```
+```
+git add (filename, ., *)
+```
+```
+pwd (查看当前本地仓库位置)
+```
+```
+git commit -m 'description'
+```
+
+```
+git log
+```
+
+```
+git reflog // 返回滚
+```
+
+
+
+##### git三大区域
+
+```
+工作区:红色，待管理的文件和新修改的文件存储于此。
+暂存区:绿色，通过git add提交的文件。
+版本库:无色，通过git commit提交的文件。
+```
+
+
+
+##### git回滚
+
+```
+git reset --hard + 版本号(git (ref)log查看): 从版本库直接切回工作区未管理分区
+git reset --mix + 版本号: 从版本库直接切回工作区已经管理的分区
+git reset --soft + 版本号: 从版本库切回暂存区
+git reset HEAD + 文件名: 从暂存区切到工作区已管理分区
+git checkout -- + 文件名: 把已经修改的工作区文件变成未被修改状态
+```
+
+
+
 ##### git文件修改机制
 
 ```
@@ -88,6 +148,6 @@ git写代码全在dev分支上实现，master上永远是线上稳定版，当de
 	3.1 git add remote origin(别名) url // 给url取别名
 	3.2 git push -u origin + 分支名 // 推送代码
 4.代码下载
-	4.1 git clone + url
+	4.1 git clone + url // 显示只有一个分支，其实所有分支都存在，直接切换即可
 ```
 
